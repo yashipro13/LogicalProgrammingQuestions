@@ -7,9 +7,7 @@ def isPangram (string1):
         if eachChar not in charFound and eachChar in all_letters:
             letters_found += 1
             charFound.append(eachChar)
-    if letters_found == 26:
-        return True
-    return False
+    return letters_found == 26
 
 print(isPangram("Pack my box with five dozen liquor jugs."))
 print(isPangram("Old brother fox jumps over the lazy dog."))
